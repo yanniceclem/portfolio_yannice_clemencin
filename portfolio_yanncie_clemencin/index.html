@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#Apropos">À propos</a></li>
+                <li><a href="#Projet">Projet</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Compétences">Compétences</a></li>
+            </ul>
+        </div>
+        <img src="https://logowik.com/content/uploads/images/blue-hamburger-menu2911.logowik.com.webp" alt="menu burger" class="menu-burger">
+    </nav>
+    <!-- navbar -->
+
+    <header></header> <!-- pour l'image en entête -->
+    <br>
+    <div class="Apropos" id="Apropos">
+        <div class="présentation">
+        <h3>À propos</h3><br>
+        <p>je m'appelle Clemencin Yannice <br></p>
+        
+            <div id="parcours">
+                je suis un éleve de BTS SIO en première année, j'ai fais d'un bac STI2D option SIN à Étienne Mimard.
+            </div><br>
+        </div>
+            <div id="formation">
+                <h4>niveau de mes formations</h4>
+                <div class="compétence">
+                    <div class="nom">
+                        <span>anglais 13/20</span>
+                        <span>phyton 14/20</span>
+                        <span>java script 11/20</span>
+                        <span>html 13/20</span>
+                        <span>css 10/20</span>
+                        <span>php 8/20</span>
+                        <span>git 9/20</span>
+                        <span>linux 10/20</span>
+                        <span>rgpd 14/20</span>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br>
+
+    <div class="Projet" id="Projet">
+        <h3>Projet</h3>
+
+        <!-- carousel -->
+        <div class="car">
+            <div calss="text">
+                <p>carousel de mes projets</p>
+            </div>
+            <div class="carousel">
+                <button class="btnc" id="prev">&#10096;</button>
+                <button class="btnc" id="next">&#10097;</button>
+                <ul>
+                    <li class="slidec active">
+                        <div id="slidec Projet mi-mars">
+                            <h4>Projet mi-mars</h4>
+                            <p>À la fin de ma première année d'STI2D j'ai fait un projet de groupe où on devait créer et programmer
+                            un robot en légo pour qu'il fasse un parcours j'était en charge de faire le programme pour qu'il ce déplace</p>
+                        </div>
+                    </li>
+                    <li class="slidec">
+                        <div id="slidec Projet sin">
+                            <h4>Projet Bac</h4>
+                            <p>En fin de deuxième année d'STI2D j'ai fait un projet de groupe où l'on devait faire une station météo
+                            j'avais la tache de cabler et programmer des capteur sur un arduino uno</p>
+                        </div>
+                    </li>
+                    <li class="slidec">
+                        <div id="slidec Projet GLPI">
+                            <h4>Projet GLPI</h4>
+                            <p>Au début de mon année de BTS j'ai fait un seveur GLPI en avec 3 VM,
+                            une windows 10, une Débian 11 avec interface graphique et une Débian 11 sans interface graphique.
+                            </div>
+                    </li>
+                    <li class="slidec">
+                        <div id="slidec ajout">
+                            <p>test ajout</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- carousel -->
+    </div>
+    <br>
+
+    <div class="Contact" id="Contact">
+
+        <h3>Contact</h3><br>
+        <div class="formulaire">
+            <form action="Clemencinyannice@gamil.com" method="post">
+                <ul>
+                <li>
+                    <input type="text" id="name" name="user_name" placeholder="nom"required/>
+                </li>
+                <li>
+                    <input type="email" id="mail" name="user_mail" placeholder="E-mail"required />
+                </li>
+                <li>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                </ul>
+                <div class="button">
+                    <button type="submit">Envoyer le message</button>
+                    </div>
+                  
+            </form>
+        </div>  
+        <br>
+        <p>mail : clemencinyannice@gmail.com</p>
+        <p>tel : 07 83 50 54 93</p>
+    </div>
+ 
+  </body>
+</html>
