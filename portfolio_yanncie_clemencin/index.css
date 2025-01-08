@@ -58,6 +58,10 @@ body p {
     margin: 0 25px;
 }
 
+.navbar .nav-links ul li:hover {
+    background-color: red;
+}
+
 .navbar .menu-burger {
 
     position: absolute;
@@ -67,7 +71,7 @@ body p {
     width: 35px;
 }
 
-/*si largeur de l'écran > 1100pix alors*/
+/*si largeur de l'écran < 1100pix alors*/
 @media screen and (max-width: 1150px) {
     .navbar {
         padding: 0
@@ -116,7 +120,7 @@ body p {
     }
 }
 
-/*si largeur de l'écran > 350pix alors*/
+/*si largeur de l'écran < 350pix alors*/
 @media screen and (max-width: 350px) {
     .navbar .logo {
         position: absolute;
@@ -283,23 +287,23 @@ body p {
 
 .Contact {
     padding: 10px 10px;
-    border: 2px solid #c8cab2;
+    border: 2px solid #b693a7;
     border-radius: 5px;
-    background-color: #dbe0ce;
+    background-color: #e3c0d4;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 
 /* formulaire */
 
 .formulaire {
-    border: 2px solid #000;
+    border: 2px solid #e3c0d4;
 }
 
 .formulaire form {
     margin: 0 auto;
     width: 400px;
     padding: 1em;
-    border: 1px solid #ccc;
+    border: 5px solid #5f84da;
     border-radius: 1em;
 }
   
@@ -346,5 +350,10 @@ input:focus,
   
 .formulaire button {
     margin-left: 0.5em;
+}
+
+.formulaire button:hover {
+    cursor: pointer;
+    background-color: #bac835fe;
 }
 /* formulaire */
