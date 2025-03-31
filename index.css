@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    height: 30vh;
+    width: 100vw;
+    background-image: url(https://images.unsplash.com/photo-1515879218367-8466d910aaa4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+}
+
+body {
+    font-family: monospace;
+    font-size: xx-large;
+}
+
+body h3 {
+    color: rgb(197, 0, 0);
+}
+
+body p {
+    margin: 0;
+}
+
+
+/* ********************************************************************************** */
+
+/* barre de nav */
+
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    font-size: 1em;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+}
+
+.navbar .nav-links ul li:hover {
+    background-color: red;
+}
+
+.navbar .menu-burger {
+
+    position: absolute;
+    display: none;
+    top: 30px;
+    right: 30px;
+    width: 35px;
+}
+
+/*si largeur de l'écran < 1100pix alors*/
+@media screen and (max-width: 1150px) {
+    .navbar {
+        padding: 0
+        ;
+    }
+
+    .navbar .menu-burger {
+        display: block;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 2em;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%; 
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+}
+
+/*si largeur de l'écran < 350pix alors*/
+@media screen and (max-width: 350px) {
+    .navbar .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 1em;
+    }
+}
+
+/* barre de nav */
+
+/* ********************************************************************************** */
+
+.Apropos {
+    padding: 10px 10px;
+    border: 2px solid #cacaca;
+    border-radius: 5px;
+    background-color: #e2e2e2;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+
+}
+
+.Apropos .formation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+/* ********************************************************************************** */
+
+/* skillbar */
+
+.compétence {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alignement à gauche */
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.progress-bar {
+    width: 500px; /* Ajuste la taille selon ton besoin */
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.2);
+    margin-right: 15px; /* Espace entre la barre et le texte */
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #ff3c3c, #ff9c3c);
+    border-radius: 5px;
+    transition: width 1.5s ease-in-out;
+}
+
+.skill span {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #5f84da;
+}
+
+.compétence .nom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #5f84da;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.compétence .nom span {
+    margin: 15px 0;
+    box-shadow: 9.91px 9.91px 15px #d9dade,
+        -9.91px -9.91px 15px #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 50px;
+    margin-right: 40px;
+}
+
+/* skillbar */
+
+/* ********************************************************************************** */
+
+.Projet {
+    padding: 10px 10px;
+    border: 2px solid #b2b2ca;
+    border-radius: 5px;
+    background-color: #ced1e0;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+/* carousel */
+
+.car {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.car .text {
+    display: flex;
+    justify-content: center;
+}
+
+.car .carousel {
+    justify-content: center;
+    height: 33vh;
+    width: 50vw;
+    padding: 30px;
+    position: relative;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.carousel .nextBtn {
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    z-index: 2; /* pour qu'il soit au dessus des text/img */
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.carousel .prevBtn {
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    z-index: 2; /* pour qu'il soit au dessus des text/img */
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+#prev {
+    left: 5px;
+}
+
+#next {
+    right: 5px;
+}
+
+.car .carousel li {
+    list-style: none;
+}
+
+.car .carousel .slidec {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.8s ease-in-out;
+    transform: translateY(-25%);
+    top: 50%;
+}
+.car .carousel .slidec.active {
+    opacity: 1;
+}
+
+.car .carousel .slidec h4 {
+    display: block;
+    margin-left: 4%;
+    margin-right: 10%;
+    color: blue;
+
+}
+
+.car .carousel .slidec p {
+    display: block;
+    margin-left: 5%;
+    margin-right: 10%;
+    font-family: monospace;
+}
+
+/* à décommanter si je veux mettre des images
+.car .carousel .slidec img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.car .slidec img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} */
+
+/* carousel */
+
+/* ********************************************************************************** */
+
+.Contact {
+    padding: 10px 10px;
+    border: 2px solid #b693a7;
+    border-radius: 5px;
+    background-color: #e3c0d4;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+/* formulaire */
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulaire form {
+    width: 50%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+
+.formulaire ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.formulaire li {
+    margin-bottom: 15px;
+}
+
+.formulaire input, 
+.formulaire textarea {
+    width: 97%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.formulaire input:focus, 
+.formulaire textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.button button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.button button:hover {
+    background: linear-gradient(90deg, #0056b3, #0084d6);
+}
+
+/* formulaire */
