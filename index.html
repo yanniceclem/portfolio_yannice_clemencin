@@ -30,10 +30,10 @@
     <section class="Apropos" id="Apropos">
         <div class="présentation">
         <h3>À propos</h3><br>
-        <p>je m'appelle Clemencin Yannice <br></p>
+        <p>je m'appelle Clemencin Yannice </p><br>
         
             <div id="parcours">
-                je suis un éleve de BTS SIO en première année, j'ai fais d'un bac STI2D option SIN à Étienne Mimard.
+                Je suis un éleve de BTS SIO en première année, j'ai fais d'un bac STI2D option SIN à Étienne Mimard.
             </div><br>
         </div>
             <div id="formation">
@@ -94,7 +94,7 @@
         <!-- carousel -->
         <div class="car">
             <div class="text">
-                <p>carousel de mes projets</p>
+                <p>Carousel de mes projets</p>
             </div>
             <div class="carousel">
                 <button class="prevBtn" id="prev">&#10096;</button>
@@ -124,7 +124,17 @@
                     </li>
                     <li class="slidec">
                         <div id="slidec-ajout">
-                            <p>test ajout</p>
+                            <h4>Page web en PHP</h4>
+                            <p>Projet en milieu de première année de BTS où l'on devait faire page web sur le thème de sont
+                             choix en PHP, l'objectif était de faire une connection a une base de données en SQL pour pouvoir
+                             afficher le nom de la personne qui s'y connectait</p>
+                        </div>
+                    </li>
+                    <li class="slidec">
+                        <div id="slidec-ajout">
+                            <h4>cookie clicker</h4>
+                            <p>Projet personnel dans le but de m'améliorer en HTML, JavaScript et CSS. Comme sont nom
+                                 l'indique le but de ce projet était de refaire le célebere jeu Cookie Clicker pour m'entrainer.</p>
                         </div>
                     </li>
                 </ul>
@@ -137,7 +147,9 @@
     <section class="Contact" id="Contact">
         <h3>Contact</h3><br>
         <div class="formulaire">
-            <form action="https://formspree.io/f/{TON_ID}" method="POST">
+            <form action="https://formspree.io/f/{ID}" method="POST">
+<!--impossible de récupérer l'id quand le site est héberger sous Github option :-->
+<!--héberger ailleur ou le faire serveur php un serveur php-->
                 <ul>
                     <li>
                         <input type="text" id="name" name="user_name" placeholder="Nom" required/>
@@ -146,7 +158,7 @@
                         <input type="email" id="mail" name="user_mail" placeholder="E-mail" required />
                     </li>
                     <li>
-                        <textarea id="msg" name="message" placeholder="Votre message..." required></textarea>
+                        <textarea id="msg" name="message" placeholder="Entrer votre message" required></textarea>
                     </li>
                 </ul>
                 <div class="button">
@@ -156,8 +168,16 @@
             
         </div>  
         <br>
-        <p>mail : clemencinyannice@gmail.com</p>
-        <p>telephone : 07 83 50 54 93</p>
+        <div class="contact">
+            <div class="mail">
+                <p>Mail : </p>
+                <p class="copiable" onclick="copierTexte(this)">clemencinyannice@gmail.com</p>
+            </div>
+            <div class="tel">
+                <p>Téléphone : </p>
+                <p class="copiable" onclick="copierTexte(this)">07 83 50 54 93</p>
+            </div>
+        </div>
     </section>
  
   </body>
